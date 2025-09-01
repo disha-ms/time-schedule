@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PESITM — 5th Sem Timetable Scheduler</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#a18cd1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>PESITM — 5th Sem (AI & ML) — Section A</h1>
+
+    <div class="controls">
+      <label>Reminder before session:
+        <select id="leadTime">
+          <option value="1">1 min</option>
+          <option value="5" selected>5 min</option>
+          <option value="10">10 min</option>
+          <option value="15">15 min</option>
+        </select>
+      </label>
+
+      <button id="btnEnable">Enable Notifications</button>
+      <button id="btnSchedule">Start Scheduler</button>
+      <button id="btnAdmin">Admin Login</button>
+      <button id="btnInstall" hidden>Install App</button>
+    </div>
+  </header>
+
+  <main>
+    <div id="toast" class="toast" aria-live="polite"></div>
+
+    <div class="table-wrap" id="tableWrap"></div>
+
+    <section class="legend">
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
